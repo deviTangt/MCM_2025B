@@ -1,6 +1,8 @@
 % [E, I, S] = Calculate_EIS(1.3e+4)
 function [E, I, S] = Calculate_EIS(V);
+    % 读取相应数据
     EIS;
+    
     % E
     E = V * Daily_Traveller_CarbonFootprint / (Max_year_GlacierMelting / Rate_GlacierMelting_with_Carbon / 365) * 100;
 
@@ -28,7 +30,7 @@ function [E, I, S] = Calculate_EIS(V);
     if (Month_housing_price <= Normal_housing_price)
         S_housing_price = 0;
     else
-        S_housing_price = 2 * (Month_housing_price - Normal_housing_price) / (Max_Acceptable_housing_price - Normal_housing_price) * 100;
+        S_housing_price = (Month_housing_price - Normal_housing_price) / (Max_Acceptable_housing_price - Normal_housing_price) * 100;
     end
     S_crowded_noised = V / Max_PuttingUpWith_TravellersNum_crowded_noised * 100;
     [S_housing_capacity S_housing_price S_crowded_noised];

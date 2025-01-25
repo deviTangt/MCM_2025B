@@ -3,7 +3,7 @@ Juneau_population = 31246;
 
 %E  Vmax 28048 -> 100
 Juneau_year_CarbonFootprint = [200 : 5 : 315] * 1e+6; % kg CO2 / year
-Juneau_year_GlacierMelting = [5, 5, [5 : 27]] * 1e-2;
+Juneau_year_GlacierMelting = [5, 5, [5 : 27]] * 1e-2; % km^2 / year
 Rate_GlacierMelting_with_Carbon = sum(Juneau_year_GlacierMelting) / sum(Juneau_year_CarbonFootprint);
 Rate_GlacierMelting_with_Carbon; % k_E
 Max_year_GlacierMelting = 0.10; % not max(Juneau_year_GlacierMelting);

@@ -1,0 +1,41 @@
+2022年朱诺市每月平均住房价格及游客人数
+表格
+月份	平均住房价格 ($/month)	游客人数
+1月	1,600	12,000
+2月	1,600	10,500
+3月	1,700	11,000
+4月	1,800	15,000
+5月	2,200	30,000
+6月	2,500	50,000
+7月	2,700	60,000
+8月	2,400	45,000
+9月	2,200	20,000
+10月	1,800	10,000
+11月	1,700	8,000
+12月	1,600	10,500
+
+2023年朱诺市每月平均住房价格及游客人数
+表格
+月份	平均住房价格 ($/month)	游客人数
+1月	1,700	10,000
+2月	1,700	8,500
+3月	1,800	9,000
+4月	1,900	12,000
+5月	2,300	25,000
+6月	2,600	50,000
+7月	2,800	65,000
+8月	2,500	40,000
+9月	2,300	15,000
+10月	1,900	10,000
+11月	1,800	9,000
+12月	1,700	10,500
+
+数据来源
+Visit Juneau - Official tourism website for Juneau, providing visitor statistics.
+Visit Juneau
+
+Zillow - Provides real estate data including average rental prices.
+Zillow Juneau Housing Market
+
+Alaska Department of Tourism - Offers annual reports on tourism statistics.
+Alaska Department of Commerce

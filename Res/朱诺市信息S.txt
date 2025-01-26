@@ -34,3 +34,27 @@ Avatar
 Juneau Cruise Passenger Volumes in Survey Years：根据McKinley Research Group的报告，2016年朱诺市接待的邮轮乘客数量为951,400人。
 
 Juneau Visitor Profile, Summer 2016：根据McDowell Group发布的《2016年朱诺游客概况》报告，2016年访问朱诺的游客平均停留时间为4.2晚
+
+
+Juneau饮用水供给投入及建设成果
+1. 投入金额
+2025财年：Juneau计划在饮用水基础设施方面投入约2500万美元。
+具体项目包括：
+Fritz Cove / Mendenhall Peninsula区域的供水系统更换：1000万美元。
+F街和W 8街供水系统重建：315万美元。
+LCB SCADA与安全升级：100万美元。
+PRV站改进与升级：225万美元。
+Clinton和Vintage供水系统重建：255万美元。
+Egan Drive供水主管道交叉更换：500万美元。
+饮用水分配系统仪表：105万美元。
+2. 建设成果
+供水能力提升：通过上述项目，Juneau的供水系统将得到显著改善，预计单天最大饮用水供水量将从目前的约300万加仑提升至约350万加仑。
+供水系统现代化：升级后的供水系统将更加高效，减少供水中断的风险，并提高供水质量。
+缓解游客压力：随着游客数量的增加，新的供水系统将更好地满足游客和居民的用水需求，特别是在旅游旺季。
+数据来源
+"Juneau utility proposes more than 50% rate increase over next 5 years" 
+"Juneau utility proposes more than 50% rate increase over …" 
+"Juneau voters will decide whether to OK $10M bond for …" 
+"Presented by: The City Manager Introduced: April 1, …" 
+"Juneau, Alaska Water Quality Report - Epic Water Filters USA" 
+"2025 MCM Problem B - immchallenge.org"

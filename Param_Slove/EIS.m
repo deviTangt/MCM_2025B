@@ -27,7 +27,7 @@ Juneau_ResidentialWaste = 7985 * 1000 / 365;  % kg / day
 Daily_Traveller_Waste = 1.260; % kg / dag / person
 
 % I considering I_water, I_waste and I_carbon
-w_I = [0.3 0.4 0.3];
+w_I = [40 20 40] * 1e-2;
 
 
 % S_housing_capacity Vmax 14000 -> 100
@@ -50,7 +50,7 @@ Max_Acceptable_housing_price = 2342; % $ / month
 Max_PuttingUpWith_TravellersNum_crowded_noised = 16000;
 
 % S considering S_housing_capacity, S_housing_price and S_crowded_noised
-w_S = [0.3 0.4 0.3];
+w_S = [30 40 30] * 1e-2;
  
 
 

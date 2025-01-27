@@ -1,0 +1,11 @@
+from	to	value
+V	P	10
+V	R	0.0207
+V	E	10.6960
+V	I	7.7395
+V	S	18.8652
+V	C	5.339
+R	P	5
+E	P	20
+I	P	15
+S	P	10

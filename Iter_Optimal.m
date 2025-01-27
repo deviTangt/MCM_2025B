@@ -7,7 +7,7 @@ function [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV, C, V, P);
     % Gamma
     gamma = zeros(7);
     gamma(6, 1) = 3;
-    gamma(1, 3 : 5) = [0.1001, 0.0715, 0.1285] / 12;
+    gamma(1, 3 : 5) = [0.1001, 0.0715, 0.1285*1.2] / 12;
     gamma(7, 3 : 5) = [0.0952, 0.1777, 0.1120] / 240;
     % Eta
     eta = zeros(7);
@@ -19,9 +19,9 @@ function [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV, C, V, P);
     mark_C = 0;
     if (C ~= 0)
     Count = 0;
-    for w_E = 0.00 : 0.1 : 1.00
+    for w_E = 0.00 : 0.25 : 1.00
         C_E = w_E * C;
-        for w_I = 0.00 : 0.1 : (1.00 - w_E)
+        for w_I = 0.00 : 0.25 : (1.00 - w_E)
             Count = Count + 1;
             C_I = w_I * C;
             C_S = C - C_E - C_I;

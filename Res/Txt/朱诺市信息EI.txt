@@ -1,0 +1,41 @@
+门登霍尔冰川（Mendenhall Glacier）的面积约为 96 km²
+数据来源
+Satellite-derived volume loss rates and glacier speeds for the Juneau Icefield, Alaska
+
+根据2024年的数据，朱诺市的常住人口约为31,246人
+来源：city-facts
+https://zh.city-facts.com/juneau/population
+
+朱诺市每年生产和分配约12亿加仑（1.2 billion gallons）的饮用水
+年总用水量转换为升：12亿加仑 × 3.785升/加仑 = 4542,000,000升
+= 124，440,000升/天
+定为饮用水供水系统的最大承载力
+数据来源
+1.City and Borough of Juneau Official Documents
+2.Juneau Public Works Department Water Utility Reports
+
+垃圾处理能力上限：根据2022年的数据，朱诺市的垃圾处理能力上限为每天约90,718公斤。
+垃圾处理设施：朱诺市的垃圾处理主要依赖于Capitol Disposal Landfill，该垃圾填埋场每年接收约30,000吨垃圾。
+数据来源
+https://juneau.org/wp-content/uploads/2024/02/JCOS-Solid-Waste-Factsheet-March-2021.pdf
+https://mccmeetingspublic.blob.core.usgovcloudapi.net/juneauak-meet-e3d81bac8a6b4e2f910568cc7dbfbc87/ITEM-Attachment-001-9a5c55cc83034231ab12c55a2621e777.pdf
+
+根据2023年的数据，邮轮游客在夏季总共向朱诺市的垃圾填埋场倾倒了约250,000磅（约113,400公斤）的垃圾。则每天的垃圾总量约为113,400 kg / 90天 = 1,260 kg/天。
+数据来源：
+Alaska Public Media
+https://alaskapublic.org/news/2024-01-31/cruise-ships-dumped-90-less-trash-in-juneau-last-year
+https://cruiseradio.net/cruise-ship-trash-cut-juneau-alaska-2023/
+
+根据2023年的数据，朱诺市居民产生的垃圾总量为7,985吨
+数据来源：
+https://juneau.org/wp-content/uploads/2024/10/Juneau-Waste-Characterization-Study-2024-Report_2024-10-8.pdf
+
+每人每天的碳足迹全球平均水平（1.363 kg CO₂/人·天）
+
+估算值：根据一项研究，美国游客的平均碳足迹为 479 kg CO₂/人·年。如果将其换算为每天的碳足迹，假设每年游客旅游天数为30天，则每天碳足迹约为：
+30 天/年 * 479 kg CO₂/人\年≈15.97 kg CO₂/人\天
+数据来源
+1.Yellowstone National Park：一项针对黄石国家公园的研究表明，该公园每年产生约1.03百万吨（1.03亿kg）二氧化碳当量排放，平均每名游客产生 479 kg CO₂。
+2.全球旅游碳足迹研究：另一项研究指出，全球旅游碳足迹在2019年达到5.2 Gt CO₂当量，其中美国游客的碳足迹占全球旅游碳足迹的19%。
+
+

@@ -1,0 +1,8 @@
+在上面模型的基础上，引入时序迭代方程组：
+C_E + C_I + C_S = C, 
+E_max(t + 1) = E_max(t) - gamma_VE * V^^eta_VE + gamma_CE * C_E^^eta_CE,
+I_max(t + 1) = I_max(t) - gamma_VI * V^^eta_VI + gamma_CI * C_I^^eta_CI,
+S_max(t + 1) = S_max(t) - gamma_VS * V^^eta_VS + gamma_CS * C_S^^eta_CS,
+V_max(t + 1) = V_max(t) + gamma_PV * P^^eta_PV。
+其中E_max(t)表示在t时间刻时E_max的值，E_maxE_max(t + 1)表示在t+1时间刻时E_max的值，其余同理。
+给出gamma_VE，gamma_CE,gamma_VI,gamma_CI,gamma_VS,gamma_CS,gamma_PV和eta_VE，eta_CE,eta_VI,eta_CI,eta_VS,eta_CS,eta_PV的如何量化的过程和结果，以及给出用来拟合的数据并给出数据来源

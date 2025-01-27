@@ -1,19 +1,19 @@
-function [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV, C, V, P);
+function [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal_Bali(EISV, C, V, P);
      persistent Log_Enable; 
     Log_Enable = 0; 
     
      persistent gamma;
      persistent eta;
-    % Gamma
-    gamma = zeros(7);
-    gamma(6, 1) = 3;
-    gamma(1, 3 : 5) = [0.1001, 0.0715, 0.1285] / 12;
-    gamma(7, 3 : 5) = [0.0952, 0.1777, 0.1120] / 240;
-    % Eta
-    eta = zeros(7);
-    eta(6, 1) = 1.2;
-    eta(1, 3 : 5) = [1, 1, 1];
-    eta(7, 3 : 5) = [1, 1, 1];
+% Gamma
+gamma = zeros(7);
+gamma(6, 1) = 3;
+gamma(1, 3 : 5) = [0.1001, 0.0715, 0.1285] / 12 * 160 / 1700;
+gamma(7, 3 : 5) = [0.1752, 0.2377, 0.2120] / 240 / 100;
+% Eta
+eta = zeros(7);
+eta(6, 1) = 1.2;
+eta(1, 3 : 5) = [1, 1, 1];
+eta(7, 3 : 5) = [1, 1, 1];
 
     mark_w = zeros(1, 3);
     mark_C = 0;
@@ -30,7 +30,7 @@ function [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV, C, V, P);
             Smax_cur = EISV(1, 3) - gamma(1, 5) * V^eta(1, 5) + gamma(7, 5) * C_S^eta(7, 5);
             Vmax_cur = EISV(1, 4) + gamma(6, 1) * P^eta(6, 1);
             [Emax_cur, Imax_cur, Smax_cur];
-            [V_cur, C_cur] = C_Optimal(Emax_cur, Imax_cur, Smax_cur, Vmax_cur);
+            [V_cur, C_cur] = C_Optimal_Bali(Emax_cur, Imax_cur, Smax_cur, Vmax_cur);
             
             if (C_cur > mark_C) 
                 mark_C = C_cur;

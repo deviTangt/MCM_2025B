@@ -1,12 +1,12 @@
 close; clear; clc;
 
 % 检验
-Check = 0
+Check = 2;
 
 Param;
 
 if (Check == 1 || Check == 2)
-[V, C] = C_Optimal(100, 100, 100, 15)
+[V, C] = C_Optimal_Bali(100, 100, 100, 1700)
 end
 
 if (Check == 1 || Check == 3)

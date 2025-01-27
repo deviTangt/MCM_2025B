@@ -42,11 +42,11 @@ if (Check == 4)
         EISV_array(Iter_count + 1, :) = [Emax, Imax, Smax, Vmax];
         V_array(Iter_count + 1, 1) = V_next;
         C_array(Iter_count + 1, 1) = C_next;
-        fprintf('Iter%2d --- Emax:%.3f\tImax:%.3f\tSmax:%.3f\tVmax:%.3f\n',...
-                    Iter_count, Emax, Imax, Smax, Vmax);
+        fprintf('Iter%2d --- Emax:%.3f\tImax:%.3f\tSmax:%.3f\tVmax:%.3f k\n',...
+                    Iter_count, Emax, Imax, Smax, Vmax * 10);
         [V_cur, C_cur] = C_Optimal_Bali(Emax, Imax, Smax, Vmax);
-        fprintf('\t\t\t --- V:%.3f\tC:%.3f\teps%d\n',...
-                    V_cur, C_cur, Iter_eps_count);
+        fprintf('\t\t\t --- V:%.3f k\tC:%.3fM Dollars\t  eps%d\n',...
+                    V_cur * 10, C_cur / 100, Iter_eps_count);
         C_1 = C_2; C_2 = C_next;
         if (C_2 - C_1 < eps) 
             Iter_eps_count = Iter_eps_count + 1;
@@ -67,12 +67,12 @@ if (Check == 4)
             break;
         end
     end
-    fprintf('\nEventually:\nEmax:%.3f\tImax:%.3f\tSmax:%.3f\tVmax:%.3f\n',...
-                    Emax, Imax, Smax, Vmax);
+    fprintf('\nEventually:\nEmax:%.3f\tImax:%.3f\tSmax:%.3f\tVmax:%.3f thousand / month\n',...
+                    Emax, Imax, Smax, Vmax * 10);
     R = k_R * V - alpha(1, 2) * V^beta(1, 2);
     Cost = k_C * V + alpha(1, 7) * V^beta(1, 7); 
-    fprintf('Revenue of Tourism：%.3f million dollars / month\tManagement cost：%.3f million dollars / month\n', R, Cost);
-    fprintf('Sustainability maintenance expenditure：CE million dollars / month:%.3f\tCI:%.3f\tCS:%.3f\n',...
+    fprintf('Revenue of Tourism：%.3f million dollars / month\tManagement cost：%.3f million dollars / month\n', R / 100, Cost / 100);
+    fprintf('Sustainability maintenance expenditur CE:%.3f\tCI:%.3f\tCS:%.3f million dollars / month\n',...
                     Maintance_C_E / 100, Maintance_C_I / 100, Maintance_C_S / 100);
     fprintf('Final Profit：%.3f million dollars / month\n', Final_GrossProfit / 100);
     X = [0 : Iter_count];
@@ -83,13 +83,13 @@ if (Check == 4)
     grid on;
     
     subplot(3, 1, 2);
-    plot(X, V_array(1 : Iter_count + 1, 1)', 'r');
-    legend('X'), xlabel('Iterative number'), ylabel('Travellers Num V / (million / month)');
+    plot(X, 10 .* V_array(1 : Iter_count + 1, 1)', 'r');
+    legend('X'), xlabel('Iterative number'), ylabel('Travellers Num V / (k / month)');
     grid on;
     
     subplot(3, 1, 3);
     plot(X, C_array(1 : Iter_count + 1, 1)', 'r');
-    legend('C'), xlabel('Iterative number'), ylabel('Extra expenditure C / (million dollars / month)');
+    legend('C'), xlabel('Iterative number'), ylabel('Extra expenditure C / (M $ / month)');
     grid on;
 end
 

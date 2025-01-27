@@ -13,14 +13,14 @@ if (Check == 1 || Check == 3)
     C = 4;
     V = 1.1;
     P = 0;
-    [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV, C, V, P);
+    [Emax, Imax, Smax, Vmax, V_next, C_next, P_next] = Iter_Optimal(EISV, C, V, P);
     [Emax, Imax, Smax, Vmax]
 end
 if (Check == 4)
-    EISV0 = [100, 100, 100, 16];
+    EISV0 = [100, 100, 100, 5];
     C0 = 4; V0 = 0; P0 = 0;
     C = C0; V = V0; P = P0;
-    Max_Iter_Num = 300;
+    Max_Iter_Num = 500;
     Iter_count = 0;
     Iter_eps_count = 0;
     EISV_array = zeros(Max_Iter_Num + 1, 4);
@@ -35,7 +35,7 @@ if (Check == 4)
     
     while (Iter_count < Max_Iter_Num) 
         Iter_count = Iter_count + 1;
-        [Emax, Imax, Smax, Vmax, V_next, C_next] = Iter_Optimal(EISV_array(Iter_count, :), C, V, P);
+        [Emax, Imax, Smax, Vmax, V_next, C_next, P_next] = Iter_Optimal(EISV_array(Iter_count, :), C, V, P);
         V = V_next;
         C = C_next;
         EISV_array(Iter_count + 1, :) = [Emax, Imax, Smax, Vmax];
@@ -53,8 +53,8 @@ if (Check == 4)
             Iter_eps_count = 0;
         end
         
-        if ((Iter_eps_count >= 20 || Iter_count == Max_Iter_Num) ...
-                && Emax >= 1.1 * EISV0(1) && Imax >= 1.1 * EISV0(2) && Smax >= 1.1 * EISV0(3)) 
+        if ( Iter_count == Max_Iter_Num || (Iter_eps_count >= 20   ...
+                && Emax >= 1.1 * EISV0(1) && Imax >= 1.1 * EISV0(2) && Smax >= 1.1 * EISV0(3))) 
              syms C_E C_I C_S;
             equ_CE = - gamma(1, 3) * V^eta(1, 3) + gamma(7, 3) * C_E^eta(7, 3);
             equ_CI = - gamma(1, 4) * V^eta(1, 4) + gamma(7, 4) * C_I^eta(7, 4);
